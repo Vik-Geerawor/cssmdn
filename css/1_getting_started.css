@@ -1,0 +1,65 @@
+/* an html element */
+h1 {
+    color: red;
+}
+
+/* 2 html elements */
+p, 
+li {
+    color: green;
+}
+
+main ul {
+    list-style-type: '✅';
+}
+
+/* a class */
+.special {
+    color: orange;
+    font-weight: bold;
+}
+
+/* descendant combinator */
+li em {
+    color: rebeccapurple;
+}
+
+/* next-sibling combinator */
+h1 + p {
+    font-size: 200%;
+}
+
+/* state-based styling */
+a:link {
+    color: pink;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body h1 + p .special {
+    color: yellow;
+    background-color: black;
+    padding: 5px;
+}
+
+#onething {
+    color: violet;
+    background-color: yellow;
+}
+
+.box p {
+    font-style: italic;
+}
+
+/* media queries */
+@media (min-width: 30em) {
+    body {
+        background-color: rgb(37, 37, 37);
+    }
+}

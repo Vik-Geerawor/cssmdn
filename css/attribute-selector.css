@@ -1,0 +1,36 @@
+li[class] {
+    font-style: italic;
+}
+
+/* value of class is exactly "done" */
+li[class="done"] {
+    color: green;
+    text-decoration: line-through;
+}
+
+/* value of class contains "done" */
+li[class~="done"] {
+    background-color: yellow;
+}
+
+/* begins with "in" followed by "-" */
+li[class|="in"] {
+    background-color: green;
+    color: white;
+}
+
+/* starts with "post" */
+li[class^="post"] {
+    background-color: orange;
+}
+
+/* ends with "not" */
+li[class$="not"] {
+    text-decoration: line-through;
+}
+
+/* contains "not" */
+li[class*="not"] {
+    background-color: red;
+    color: white;
+}

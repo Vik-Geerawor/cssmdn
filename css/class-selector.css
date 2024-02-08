@@ -1,0 +1,12 @@
+.note {
+    border: 4px solid green;
+    padding: .5em;
+}
+
+.note.warning {
+    border-color: orange;
+}
+
+.note.error {
+    border-color: red;
+}
