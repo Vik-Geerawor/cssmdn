@@ -1,0 +1,20 @@
+a:hover {
+    color: green;
+}
+
+section p::first-line {
+    color: red;
+}
+
+.box::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000;
+    background-color: rebeccapurple;
+}
+
+.box::after {
+    content: "➥"
+}
