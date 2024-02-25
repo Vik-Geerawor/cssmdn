@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: rgb(122, 176, 226);
+  padding: 20px;
+  border: 30px solid #524e4e;
+  margin: 40px;
+}
+
+strong {
+  color: red;
+  padding: 10px;
+  border: 5px solid #524e4e;
+  margin: 15px;
+  /* toggle comment of line below to see the effect */
+  /* display: block; */
+  display: inline-block;
+}

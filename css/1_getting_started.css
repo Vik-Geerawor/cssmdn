@@ -1,65 +1,82 @@
-/* an html element */
+/* 1. Element Selector */
+/* every h1 on the page */
 h1 {
-    color: red;
+  color: red;
 }
 
-/* 2 html elements */
-p, 
+/* multiple elements selector */
+p,
 li {
-    color: green;
+  color: green;
 }
 
-main ul {
-    list-style-type: '✅';
-}
-
-/* a class */
+/* 2. Class Selector */
 .special {
-    color: orange;
-    font-weight: bold;
+  color: orange;
+  font-weight: bold;
 }
 
-/* descendant combinator */
-li em {
-    color: rebeccapurple;
-}
-
-/* next-sibling combinator */
-h1 + p {
-    font-size: 200%;
-}
-
-/* state-based styling */
+/* 3. Pseudo-class Selector */
+/* State-Based */
 a:link {
-    color: pink;
+  color: pink;
 }
 
 a:visited {
-    color: green;
+  color: green;
 }
 
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-body h1 + p .special {
-    color: yellow;
-    background-color: black;
-    padding: 5px;
-}
-
+/* 4. ID selector */
 #onething {
-    color: violet;
-    background-color: yellow;
+  color: violet;
+  background-color: yellow;
 }
 
+/* 5. Attribute Selector */
+img[src] {
+  border: 2px double gray;
+}
+
+/******************************************************************************/
+/* Location-Based */
+/* descendant combinator - every em inside every li*/
+li em {
+  color: rebeccapurple;
+}
+
+/* every p inside every element which has class="box" */
 .box p {
-    font-style: italic;
+  font-style: italic;
 }
 
+/* next-sibling combinator - first p immediately after every h1*/
+h1 + p {
+  font-size: 200%;
+  color: blue;
+}
+
+/* any element with the class="special" 
+which is inside a p 
+which immediately after an h1 
+which is inside the body */
+body h1 + p .special {
+  color: yellow;
+  background-color: black;
+  padding: 5px;
+}
+
+/******************************************************************************/
 /* media queries */
 @media (min-width: 30em) {
-    body {
-        background-color: rgb(37, 37, 37);
-    }
+  body {
+    background-color: rgb(37, 37, 37);
+  }
+}
+
+main ul {
+  list-style-type: "✅";
 }
